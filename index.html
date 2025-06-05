@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>invENTOry | Gestión de Inventario Moderna</title>
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+    <div class="div1" style="max-width: 820px;">
+        <header class="header-inventory">
+            <img src="logo.png" alt="Logo invENTOry" class="logo-inventory">
+            <div>
+                <h1>invENTOry</h1>
+                <p class="slogan">Controla tu inventario, controla tu éxito.</p>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="desc-section">
+                <h2>La plataforma de inventario para empresas modernas</h2>
+                <p>
+                    <strong>invENTOry</strong> te permite gestionar, visualizar y analizar tu stock con una interfaz profesional, rápida y adaptable. 
+                    Optimiza tu negocio con reportes claros, alertas de bajo stock y una experiencia visual de primer nivel.
+                </p>
+                <ul>
+                    <li>Visualiza tu stock con badges de estado y colores intuitivos.</li>
+                    <li>Agrega, edita y consulta productos en segundos.</li>
+                    <li>Interfaz responsive y accesible desde cualquier dispositivo.</li>
+                    <li>Ideal para empresas que buscan eficiencia y crecimiento.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 style="text-align:left;margin-bottom:10px;">Vista previa del inventario</h2>
+                <div class="inventory-preview">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th-code">Código</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Cantidad</th>
+                                <th class="th-status">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-code">A001</td>
+                                <td>Mouse Inalámbrico</td>
+                                <td>Accesorios</td>
+                                <td>25</td>
+                                <td><span class="badge badge-success">Disponible</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-code">A002</td>
+                                <td>Teclado Mecánico</td>
+                                <td>Accesorios</td>
+                                <td>5</td>
+                                <td><span class="badge badge-warning">Bajo stock</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-code">B010</td>
+                                <td>Monitor 24"</td>
+                                <td>Pantallas</td>
+                                <td>0</td>
+                                <td><span class="badge badge-danger">Sin stock</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-code">C021</td>
+                                <td>Impresora Láser</td>
+                                <td>Oficina</td>
+                                <td>12</td>
+                                <td><span class="badge badge-info">Reservado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="cta-section">
+                <span>¿Listo para llevar tu inventario al siguiente nivel?</span>
+                <button onclick="window.location.href='proyecto.html'">Iniciar sesión</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

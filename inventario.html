@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="proyecto.css">
+    <script src="inventario.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <h1>Inventario</h1>
+        <form onsubmit="agregarArticulo(event)">
+            <p>Código: <input type="text" id="codigo" required></p>
+            <p>Nombre: <input type="text" id="nombreArticulo" required></p>
+            <p>Categoría:
+                <select id="categoria" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="Alimento">Alimento</option>
+                    <option value="Accesorio">Accesorio</option>
+                    <option value="Bebida">Bebida</option>
+                    <option value="Juguete">Juguete</option>
+                    <option value="Tecnologia">Tecnología</option>
+                    <option value="Libro/Revista">Libro/Revista</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </p>
+            <p>Cantidad: <input type="number" id="cantidad" required min="1"></p>
+            <p>Estado:
+                <select id="estado" required>
+                    <option value="">Seleccione el estado</option>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Bajo stock">Bajo stock</option>
+                    <option value="Reservado">Reservado</option>
+                    <option value="Sin stock">Sin stock</option>
+                </select>
+            </p>
+            <button type="submit">Agregar</button>
+        </form>
+        <h2>Lista de artículos</h2>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaInventario">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
