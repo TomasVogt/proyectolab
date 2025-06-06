@@ -1,118 +1,1089 @@
-/* Fuente desde Google Fonts */
+/* Fuente moderna */
+Add comment
+More actions
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-/* Variables de colores y diseño */
+
+
+
+
 :root {
-  --fondo: #f7f8fa;
-  --panel: #fff;
-  --borde: #e5e7eb;
-  --azul: #2563eb;
-  --gris: #6b7280;
+
+
+    --fondo: #f7f8fa;
+
+
+    --panel: #fff;
+
+
+    --borde: #e5e7eb;
+
+
+    --gris: #6b7280;
+
+
+    --azul: #2563eb;
+
+
+    --azul-suave: #e0e7ff;
+
+
+    --sombra: 0 2px 16px #0001;
+
+
+    --radio: 18px;
+
+
 }
 
-/* Estilos base */
+
+
+
+
 body {
-  margin: 0;
-  background: var(--fondo);
-  font-family: 'Inter', sans-serif;
-  color: #18181b;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+
+
+    background: var(--fondo);
+
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+
+    color: #18181b;
+
+
+    margin: 0;
+
+
+    min-height: 100vh;
+
+
+    display: flex;
+
+
+    align-items: flex-start;
+
+
+    justify-content: center;
+
+
 }
 
-/* Contenedor principal */
+
+
+
+
 .div1 {
-  background: var(--panel);
-  border: 1px solid var(--borde);
-  border-radius: 18px;
-  padding: 32px;
-  max-width: 480px;
-  width: 100%;
-  box-shadow: 0 2px 16px #0001;
+
+
+    background: var(--panel);
+
+
+    border-radius: var(--radio);
+
+
+    box-shadow: var(--sombra);
+
+
+    padding: 44px 24px 36px 24px;
+
+
+    max-width: 480px;
+
+
+    width: 100%;
+
+
+    margin: 48px auto;
+
+
+    border: 1.5px solid var(--borde);
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 28px;
+
+
 }
 
-/* Título */
+
+
+
+
+.header-inventory {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 18px;
+
+
+    margin-bottom: 0;
+
+
+}
+
+
+
+
+
+.logo-inventory {
+
+
+    width: 54px;
+
+
+    height: 54px;
+
+
+    border-radius: 12px;
+
+
+    object-fit: contain;
+
+
+    background: var(--azul-suave);
+
+
+    border: 1.5px solid var(--borde);
+
+
+}
+
+
+
+
+
 h1 {
-  font-size: 2rem;
-  color: var(--azul);
-  text-align: center;
-  margin-bottom: 10px;
+
+
+    font-size: 2.1rem;
+
+
+    color: var(--azul);
+
+
+    letter-spacing: 0.04em;
+
+
+    font-weight: 700;
+
+
+    margin: 0 0 10px 0;
+
+
+    text-align: center;
+
+
 }
 
-/* Subtítulo o slogan */
+
+
+
+
 .slogan {
-  font-size: 1rem;
-  color: var(--gris);
-  text-align: center;
-  margin-top: 0;
+
+
+    color: var(--gris);
+
+
+    font-size: 1.08rem;
+
+
+    margin: 4px 0 0 0;
+
+
+    font-weight: 400;
+
+
+    letter-spacing: 0.03em;
+
+
 }
 
-/* Formularios */
+
+
+
+
+h2 {
+
+
+    margin-top: 32px;
+
+
+    color: var(--azul);
+
+
+    font-size: 1.18rem;
+
+
+    letter-spacing: 0.01em;
+
+
+    text-align: center;
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+form {
+
+
+    width: 100%;
+
+
+}
+
+
+
+
+
 form p {
-  font-weight: 500;
-  margin: 20px 0;
+
+
+    margin: 22px 0 22px 0;
+
+
+    font-size: 1.08rem;
+
+
+    font-weight: 500;
+
+
+    color: #222;
+
+
+    letter-spacing: 0.01em;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 18px;
+
+
 }
 
-input, select {
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  border: 1px solid var(--borde);
-  border-radius: 8px;
-  background: var(--fondo);
-  margin-top: 8px;
+
+
+
+
+input[type="text"], input[type="password"], input[type="number"], select {
+
+
+    border: 1.5px solid var(--borde);
+
+
+    background: var(--fondo);
+
+
+    color: #18181b;
+
+
+    padding: 14px 18px;
+
+
+    border-radius: 10px;
+
+
+    font-size: 1.08rem;
+
+
+    width: 80%;
+
+
+    transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+
+
+    outline: none;
+
+
+    margin-left: 10px;
+
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+
 }
+
+
+
+
 
 input:focus, select:focus {
-  border-color: var(--azul);
-  outline: none;
+
+
+    border-color: var(--azul);
+
+
+    background: var(--azul-suave);
+
+
+    box-shadow: 0 0 0 2px #2563eb33;
+
+
 }
 
-/* Botón */
+
+
+
+
 button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background: var(--azul);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-top: 20px;
-  cursor: pointer;
+
+
+    background: var(--azul);
+
+
+    color: var(--panel);
+
+
+    border: none;
+
+
+    border-radius: 10px;
+
+
+    padding: 13px 38px;
+
+
+    font-size: 1.13rem;
+
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+
+    font-weight: 700;
+
+
+    margin: 0 auto;
+
+
+    cursor: pointer;
+
+
+    box-shadow: var(--sombra);
+
+
+    transition: 
+
+
+        background 0.18s,
+
+
+        box-shadow 0.18s,
+
+
+        transform 0.15s,
+
+
+        letter-spacing 0.15s;
+
+
+    letter-spacing: 0.09em;
+
+
+    position: relative;
+
+
+    overflow: hidden;
+
+
+    display: block;
+
+
 }
 
-/* Tabla */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+
+
+
+
+button:hover {
+
+
+    background: #1746a2;
+
+
+    box-shadow: 0 4px 24px #2563eb22;
+
+
+    letter-spacing: 0.13em;
+
+
+    transform: scale(1.04) translateY(-2px);
+
+
 }
+
+
+
+
+
+button:active {
+
+
+    background: #0f2c5c;
+
+
+    color: var(--azul-suave);
+
+
+    transform: scale(0.97);
+
+
+}
+
+
+
+
+
+/* Sección descriptiva y CTA */
+
+
+.desc-section {
+
+
+    background: var(--fondo);
+
+
+    border-radius: 14px;
+
+
+    padding: 24px 20px;
+
+
+    box-shadow: 0 1px 6px #2563eb11;
+
+
+    margin-bottom: 0;
+
+
+}
+
+
+
+
+
+.desc-section h2 {
+
+
+    color: var(--azul);
+
+
+    font-size: 1.22rem;
+
+
+    margin-bottom: 10px;
+
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+.desc-section p {
+
+
+    color: #222;
+
+
+    font-size: 1.08rem;
+
+
+    margin-bottom: 10px;
+
+
+    line-height: 1.6;
+
+
+}
+
+
+
+
+
+.desc-section ul {
+
+
+    margin: 12px 0 0 0;
+
+
+    padding-left: 20px;
+
+
+    color: var(--gris);
+
+
+    font-size: 1.03rem;
+
+
+    line-height: 1.7;
+
+
+}
+
+
+
+
+
+.desc-section ul li {
+
+
+    margin-bottom: 7px;
+
+
+}
+
+
+
+
+
+.cta-section {
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    align-items: flex-start;
+
+
+    gap: 18px;
+
+
+}
+
+
+
+
+
+.cta-section span {
+
+
+    font-size: 1.08rem;
+
+
+    color: #555;
+
+
+}
+
+
+
+
+
+/* Vista previa de inventario en index */
+
+
+.inventory-preview {
+
+
+    background: #f3f6fd;
+
+
+    border-radius: 16px;
+
+
+    padding: 24px 18px;
+
+
+    box-shadow: 0 2px 12px #2563eb11;
+
+
+    margin-bottom: 0;
+
+
+    overflow-x: auto;
+
+
+}
+
+
+
+
+
+/* Contenedor para tabla responsiva con scroll horizontal */
+
+
+.tabla-contenedor, .inventory-preview {
+
+
+    width: 100%;
+
+
+    margin-top: 0;
+
+
+    margin-bottom: 0;
+
+
+    overflow-x: auto;
+
+
+}
+
+
+
+
+
+/* Tabla de inventario */
+
+
+table {
+
+
+    width: 100%;
+
+
+    min-width: 520px;
+
+
+    border-collapse: separate;
+
+
+    border-spacing: 0 8px;
+
+
+    background: transparent;
+
+
+    table-layout: auto;
+
+
+}
+
+
+
+
 
 th, td {
-  border: 1px solid var(--borde);
-  padding: 10px;
-  text-align: center;
+
+
+    padding: 10px 8px;
+
+
+    text-align: center;
+
+
+    font-size: 1.02rem;
+
+
+    border-radius: 10px;
+
+
+    letter-spacing: 0.01em;
+
+
+    background: none;
+
+
+    border: 1px solid var(--borde);
+
+
+    white-space: nowrap;
+
+
+    overflow: visible;
+
+
+    text-overflow: initial;
+
+
 }
+
+
+
+
 
 th {
-  background: #e0e7ff;
-  color: var(--azul);
-  font-weight: bold;
+
+
+    background: #e9f1ff;
+
+
+    color: var(--azul);
+
+
+    font-weight: 700;
+
+
+    border-bottom: 2px solid var(--azul);
+
+
 }
 
-/* Estados */
+
+
+
+
+.th-code, .td-code {
+
+
+    font-family: 'Inter', monospace;
+
+
+    color: #4f46e5;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 0.09em;
+
+
+}
+
+
+
+
+
+.th-status {
+
+
+    text-align: center;
+
+
+}
+
+
+
+
+
 .badge {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  display: inline-block;
+
+
+    display: inline-block;
+
+
+    padding: 6px 18px;
+
+
+    border-radius: 999px;
+
+
+    font-size: 1rem;
+
+
+    font-weight: 600;
+
+
+    letter-spacing: 0.04em;
+
+
+    background: #e5e7eb;
+
+
+    color: #374151;
+
+
+    box-shadow: 0 1px 4px #2563eb11;
+
+
+    text-align: center;
+
+
+    min-width: 90px;
+
+
+    border: none;
+
+
 }
 
-.badge-success { background: #d1fae5; color: #059669; }
-.badge-warning { background: #fef9c3; color: #b45309; }
-.badge-danger  { background: #fee2e2; color: #dc2626; }
-.badge-info    { background: #e0e7ff; color: #4338ca; }
+
+
+
+
+.badge-success, .estado-disponible {
+
+
+    background: #d1fae5 !important;
+
+
+    color: #059669 !important;
+
+
+}
+
+
+
+
+
+.badge-warning, .estado-bajo {
+
+
+    background: #fef9c3 !important;
+
+
+    color: #b45309 !important;
+
+
+}
+
+
+
+
+
+.badge-danger, .estado-sin {
+
+
+    background: #fee2e2 !important;
+
+
+    color: #dc2626 !important;
+
+
+}
+
+
+
+
+
+.badge-info, .estado-reservado {
+
+
+    background: #e0e7ff !important;
+
+
+    color: #4338ca !important;
+
+
+}
+
+
+
+
+
+tbody tr {
+
+
+    background: var(--panel);
+
+
+    color: #18181b;
+
+
+    box-shadow: 0 1px 8px #2563eb11;
+
+
+    transition: 
+
+
+        transform 0.18s,
+
+
+        box-shadow 0.18s,
+
+
+        border-color 0.18s,
+
+
+        background 0.18s;
+
+
+    animation: filaInventario 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+
+
+    position: relative;
+
+
+}
+
+
+
+
+
+tbody tr:hover {
+
+
+    transform: scale(1.01);
+
+
+    box-shadow: 0 8px 24px #2563eb22;
+
+
+    background: #f0f6ff;
+
+
+}
+
+
+
+
+
+@keyframes filaInventario {
+
+
+    0% { opacity: 0; transform: translateY(20px) scale(0.98);}
+
+
+    100% { opacity: 1; transform: translateY(0) scale(1);}
+
+
+}
+
+
+
+
+
+/* Scrollbar */
+
+
+::-webkit-scrollbar {
+
+
+    height: 8px;
+
+
+    width: 8px;
+
+
+    background: var(--fondo);
+
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background: var(--azul);
+
+
+    border-radius: 8px;
+
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media (max-width: 900px) {
+
+
+    .div1 {
+
+
+        max-width: 99vw;
+
+
+    }
+
+
+    .inventory-preview, .tabla-contenedor {
+
+
+        padding: 0;
+
+
+    }
+
+
+    table {
+
+
+        min-width: 420px;
+
+
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+    .div1 {
+
+
+        padding: 10px 2vw;
+
+
+        max-width: 99vw;
+
+
+    }
+
+
+    h1 {
+
+
+        font-size: 1.3rem;
+
+
+    }
+
+
+    th, td {
+
+
+        font-size: 0.93rem;
+
+
+        padding: 7px 2px;
+
+
+    }
+
+
+    .tabla-contenedor, .inventory-preview {
+
+
+        min-width: 0;
+
+
+        padding: 0;
+
+
+        overflow-x: auto;
+
+
+    }
+
+
+    table {
+
+
+        font-size: 0.95rem;
+
+
+        min-width: 420px;
+
+
+    }
+
+
+}
